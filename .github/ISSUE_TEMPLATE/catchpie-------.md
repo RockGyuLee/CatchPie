@@ -7,11 +7,9 @@ assignees: ''
 
 ---
 
-##필요 사항
-- [ ] styled-component
-- [ ] tailwind css framework
-- [ ] sqlite
-- [ ] ocr library
-- [ ] crop library
+## 목적
+> 
+작업 상세 내용.
+- [ ] 
 
-##참고 문헌
+## 참고 사항
