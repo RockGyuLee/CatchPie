@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "CatchPie",
+    "slug": "CatchPie",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "CatchPie"
+}
