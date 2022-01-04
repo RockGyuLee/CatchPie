@@ -7,19 +7,15 @@ import { StyleSheet, View, SafeAreaView, Text } from 'react-native';
 // modules
 import Main from './src/main';
 import { SubText } from './src/components/Text';
-import { CirecleButton } from './src/components/Button';
-
-const SView = styled(View)`
-  ${[t.mB4, t.bgGray500, t.rounded, t.m1,]}
-`;
+import { CirecleBtn } from './src/components/Button';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Main />
-      <CirecleButton>
+      <CirecleBtn>
         <Text>tet</Text>
-      </CirecleButton>
+      </CirecleBtn>
     </SafeAreaView>
   );
 }

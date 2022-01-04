@@ -23,6 +23,6 @@ export function Header(){
 
 export function SubText(){
     return (
-        <SText>0632241994</SText>
+        <SText selectable={true}>0632241994</SText>
     )
 }
