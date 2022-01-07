@@ -1,28 +1,49 @@
 import React from "react";
 import {t} from 'react-native-tailwindcss';
 import styled from 'styled-components';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 const MoNoText = styled(Text)`
     ${[t.fontMono]}
 `
 
 const HText = styled(MoNoText)`
-    ${[t.textXl, t.mB4, t.fontBold	]}
+    ${[t.textXl, t.mT2, t.mB1, t.fontBold]}
 `
 
 const SText = styled(MoNoText)`
-    ${[t.textBase]}
+    ${[t.textBase,]}
 `
 
-export function Header(){
+const RowView = styled(View)`
+    ${[t.mT1, t.flexRow, t.itemsCenter,t.contentCenter, t.pL5]}
+`
+
+export function Header({title}){
     return (
-        <HText>전북대 할리스</HText>
+        <HText>{title}</HText>
     )
 }
 
-export function SubText(){
+export function SubText({title}){
     return (
-        <SText selectable={true}>0632241994</SText>
+        <SText selectable={true}>{title}</SText>
+    )
+}
+
+export function InfoText({id, pw}){
+
+    return (
+        <View>
+            <RowView>
+                <Icon name={"wifi"} size={30}/>
+                <SText style={[t.pL5]} selectable={true}>{id}</SText>
+            </RowView>
+            <RowView style={[t.mT1, t.flexRow, t.itemsCenter]}>
+                <Icon name={"lock1"} size={30}/>
+                <SText style={[t.pL5]} selectable={true}>{pw}</SText>
+            </RowView>
+        </View>
     )
 }

@@ -1,12 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { t } from 'react-native-tailwindcss';
-import styled from 'styled-components';
-import { StyleSheet, View, SafeAreaView, Text } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import Icon from 'react-native-vector-icons/Fontisto';
 
 // modules
-import Main from './src/main';
-import { SubText } from './src/components/Text';
+import Main from './src/Main';
 import { CirecleBtn } from './src/components/Button';
 
 export default function App() {
@@ -14,7 +11,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <Main />
       <CirecleBtn>
-        <Text>tet</Text>
+        <Icon name="camera" color="white"/>
       </CirecleBtn>
     </SafeAreaView>
   );
