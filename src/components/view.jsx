@@ -32,7 +32,7 @@ function MView(props){
     // 카드의 열닫 상태
     const [isOpenCard, setIsOpenCard] = useState(false);
 
-    const [size, setSize] = useState(new Animated.Value(defaultH))
+    const [size, ] = useState(new Animated.Value(defaultH))
     
     useLayoutEffect(() => {
         if(isOpenCard){
